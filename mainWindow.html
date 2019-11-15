@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ShoppingList</title>
+    <link rel="stylesheet" href="./stylesheet/mystyle.css">
+    <link rel="stylesheet" href="./stylesheet/media-queries.css">
+</head>
+
+<body>
+
+    <div id="title-bar">
+        <div id="title">VBuild</div>
+        <div id="title-bar-btns">
+            <button id="min-btn">-</button>
+            <button id="max-btn">+</button>
+            <button id="close-btn">x</button>
+        </div>
+    </div>
+
+    <form class="dragable">
+        <div class="section"><span>1</span>Schema Name and Password</div>
+        <div class="inner-wrap">
+            <label>Schema:<input type="text" name="schema-name"></label>
+            <label for="schema-password">Password: <input id="schema-password" type="text"></label>
+        </div>
+    </form>
+
+    <form>
+        <h2 class="dragable">Choose Environment</h2>
+        <div class="radio-button">
+            <input id="radio1" name="radio" type="radio" value="dev1221" class="radio-button-class" />
+            <label for="radio1">Dev1221</label>
+        </div>
+        <div class="radio-button">
+            <input id="radio2" name="radio" type="radio" value="test1221" class="radio-button-class" />
+            <label for="radio2">Test1221</label>
+        </div>
+        <div class="radio-button">
+            <input id="radio3" name="radio" type="radio" value="payaravagrant" class="radio-button-class" />
+            <label for="radio3">PayaraVagrant</label>
+        </div>
+    </form>
+
+    <div>
+        <h2 class="dragable">Choose Database</h2>
+        <div class="radio-button">
+            <input id="radio4" name="radio" type="radio" value="oracle" class="radio-button-db" />
+            <label for="radio4">Oracle</label>
+        </div>
+        <div class="radio-button">
+            <input id="radio5" name="radio" type="radio" value="on-prem" class="radio-button-db" />
+            <label for="radio5">Postgres - On-Prem</label>
+        </div>
+        <div class="radio-button">
+            <input id="radio6" name="radio" type="radio" value="cloud" class="radio-button-db" />
+            <label for="radio6">Postgres - Cloud</label>
+        </div>
+    </div>
+
+    <div>
+        <textarea class="textarea" id="target"></textarea>
+        <textarea class="textarea" id="target2"></textarea>
+    </div>
+
+    <div class="output dragable">
+        <p id="target1"></p>
+    </div>
+</body>
+
+<script src="js/button-functions.js" type="text/javascript"></script>
+<script src="js/string-builder.js" type="text/javascript"></script>
+
+
+</html>
