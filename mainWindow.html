@@ -9,7 +9,7 @@
 
 <body>
 
-    <div id="title-bar">
+    <div id="title-bar" class="dragable">
         <div id="title">VBuild</div>
         <div id="title-bar-btns">
             <button id="min-btn">-</button>
@@ -19,7 +19,7 @@
     </div>
 
     <form class="dragable">
-        <div class="section"><span>1</span>Schema Name and Password</div>
+        <div class="section">Schema Name and Password</div>
         <div class="inner-wrap">
             <label>Schema:<input type="text" name="schema-name"></label>
             <label for="schema-password">Password: <input id="schema-password" type="text"></label>
@@ -42,7 +42,7 @@
         </div>
     </form>
 
-    <div>
+    <form>
         <h2 class="dragable">Choose Database</h2>
         <div class="radio-button">
             <input id="radio4" name="radio" type="radio" value="oracle" class="radio-button-db" />
@@ -56,20 +56,44 @@
             <input id="radio6" name="radio" type="radio" value="cloud" class="radio-button-db" />
             <label for="radio6">Postgres - Cloud</label>
         </div>
-    </div>
+    </form>
 
-    <div>
-        <textarea class="textarea" id="target"></textarea>
-        <textarea class="textarea" id="target2"></textarea>
-    </div>
+    <form class="dragable">
+        <h2>Gradle Task</h2>
+        <div class="radio-button">
+            <input id="radio7" name="radio" type="radio" value="test" class="radio-button-task" />
+            <label for="radio7">All Tests</label>
+        </div>
+        <div class="radio-button">
+            <input id="radio8" name="radio" type="radio" value="build" class="radio-button-task" />
+            <label for="radio8">Build</label>
+        </div>
+    </form>
 
-    <div class="output dragable">
-        <p id="target1"></p>
+    <form class="dragable">
+        <h2>Excusions</h2>
+        <div class="radio-button">
+            <input id="radio9" name="radio" type="radio" value="xtest" class="radio-button-exclusions" />
+            <label for="radio9">All Tests</label>
+        </div>
+        <div class="radio-button">
+            <input id="radio10" name="radio" type="radio" value="xtest" class="radio-button-exclusions" />
+            <label for="radio10">Build</label>
+        </div>
+    </form>
+
+    <div class="output">
+        <span>./gradlew </span>
+        <span id="envrionment-target" class="copyable"></span>
+        <span id="database-target" class="copyable"></span>
+        <span id="task-target" class="copyable"></span>
+        <span id="exclusions-target" class="copyable"></span>
+        <span><button onclick="copyToClipBoard()"></button></span>
     </div>
 </body>
 
 <script src="js/button-functions.js" type="text/javascript"></script>
 <script src="js/string-builder.js" type="text/javascript"></script>
-
+<script src='js/text-functions.js' type="text/javascript"></script>
 
 </html>

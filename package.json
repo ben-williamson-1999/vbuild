@@ -12,6 +12,7 @@
   "author": "Ben Williamson",
   "license": "ISC",
   "dependencies": {
+    "clipboard": "^2.0.4",
     "electron": "^1.7.6"
   },
   "devDependencies": {

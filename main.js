@@ -13,7 +13,7 @@ let addWindow;
 // Listen for app to be ready
 app.on('ready', function () {
   // Create new window
-  mainWindow = new BrowserWindow({ width: 800, height: 600, titleBarStyle: 'customButtonsOnHover', frame: false });
+  mainWindow = new BrowserWindow({ width: 800, height: 1000, titleBarStyle: 'customButtonsOnHover', frame: false });
   // Load html in window
   mainWindow.loadURL(url.format({
     pathname: path.join(__dirname, 'mainWindow.html'),
