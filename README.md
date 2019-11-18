@@ -1,6 +1,12 @@
-# vbuild
-vbuild
+### vbuild
+By Ben
 
-npm install
+### To Install all Dependencies - run
 
-npm start
+```npm install```
+
+### To Start Appl - run
+```npm start```
+
+### End Goal
+Have an app which will automatically execute the right vagrant commands and correct deployment commands.
