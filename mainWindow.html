@@ -18,13 +18,26 @@
         </div>
     </div>
 
-    <form class="dragable">
-        <div class="section">Schema Name and Password</div>
+    <h2 class="dragable">Schema Name and Password</h2>
+
+    <div class="form">
+        <input type="text" name="schema-name">
+        <label for="schema-name" class="label-name">
+            <span class="content-name">Schema </span>
+        </label>
+    </div>
+
+    <!-- <input id="schema-password" type="text">
+            <label for="schema-password" class="label-name">
+                <span class="content-name">Password: </span>
+            </label> -->
+    <!-- <div><h2>Squad</h2></div>
         <div class="inner-wrap">
-            <label>Schema:<input type="text" name="schema-name"></label>
-            <label for="schema-password">Password: <input id="schema-password" type="text"></label>
-        </div>
-    </form>
+            <input type="text" name="squad-name" required>
+            <label for="squad-name" class="label-name">
+                <span class="content-name">Squad Name: </span>
+            </label>
+        </div> -->
 
     <form>
         <h2 class="dragable">Choose Environment</h2>
@@ -58,8 +71,8 @@
         </div>
     </form>
 
-    <form class="dragable">
-        <h2>Gradle Task</h2>
+    <form>
+        <h2 class="dragable">Gradle Task</h2>
         <div class="radio-button">
             <input id="radio7" name="radio" type="radio" value="test" class="radio-button-task" />
             <label for="radio7">All Tests</label>
@@ -70,8 +83,8 @@
         </div>
     </form>
 
-    <form class="dragable">
-        <h2>Excusions</h2>
+    <form>
+        <h2 class="dragable">Excusions</h2>
         <div class="radio-button">
             <input id="radio9" name="radio" type="radio" value="xtest" class="radio-button-exclusions" />
             <label for="radio9">All Tests</label>
