@@ -1,12 +1,16 @@
-var listOfElements;
-var copyString = "";
+const {clipboard} = require('electron');
 
-function copyToClipBoard() {
-    listOfElements = document.querySelectorAll('.copyable')
-    const el = document.createElement('textarea');
-    listOfElements.forEach(createClipBoardString);
-}
+var copyButton = document.querySelector('.copy-button');
+copyButton.addEventListener('click', function (event) {
+    copyTextToClipboard();
+});
 
-function createClipBoardString(element) {
-    //TODO
+function copyTextToClipboard() {
+    var elems = document.getElementsByClassName("copyable");
+    var arr = [];
+    for (var i = 0; i < elems.length; i++) {
+        arr.push(elems[i].innerHTML);
+    }
+    var text = arr.join(' ');
+    clipboard.writeText(text);
 }

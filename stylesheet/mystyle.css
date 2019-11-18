@@ -51,7 +51,7 @@
   transition: all 200ms ease-in;
 }
 .radio-button input:checked ~ label {
-  color: #fff;
+  color: #000000;
 }
 
 .radio-button input:checked ~ label:after {
