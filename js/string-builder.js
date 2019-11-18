@@ -3,6 +3,28 @@ var databaseButtons = document.querySelectorAll('.radio-button-db');
 var taskButtons = document.querySelectorAll('.radio-button-task');
 var exclusions = document.querySelectorAll('.radio-button-exclusions');
 
+var databaseMappings = {
+    'oracle':'',
+    'on-prem':'',
+    'cloud':''
+}
+
+var environmentMappings = {
+    'dev1221':'',
+    'test1221':'',
+    'payaravagrant':''
+}
+
+var gradleTaskMapping = {
+    'test':'',
+    'build':''
+}
+
+var exclusionsMappings = {
+    'xtest':'',
+    'xbuild':''
+}
+
 for (i = 0; i < environmentButtons.length; i++) {
     environmentButtons[i].addEventListener('change', function () {
         var text = document.createTextNode(this.value);
