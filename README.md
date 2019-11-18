@@ -6,7 +6,7 @@ By Ben
 ```npm install```
 
 ### To Start Appl - run
-npm start
+```npm start```
 
 ### End Goal
 Have an app which will automatically execute the right vagrant commands and correct deployment commands.
