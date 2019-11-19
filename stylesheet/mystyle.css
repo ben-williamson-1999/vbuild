@@ -82,18 +82,15 @@
 } */
 
 .form {
-  width: 300px;
+  width: 34%;
   position: relative;
   height: 50px;
-  margin-top: 30px;
-  overflow: hidden;
-}
-
-.form div {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-content: right;
+  align-content: center;
+  margin-top: 30px;
+  overflow: hidden;
 }
 
 .form input {
@@ -146,6 +143,7 @@
 
 body {
   background-color: #D1D7DC;
+  font-family: 'Fira Sans', sans-serif;
   padding: 0px;
   margin: 0px;
   font-family: sans-serif;
